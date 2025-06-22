@@ -89,8 +89,7 @@ function Register() {
           <div className="md:w-1/3">
             <label
               className="block text-white font-bold md:text-right mb-1 md:mb-0 pr-4"
-              for="inline-full-ownername"
-            >
+              for="inline-full-ownername" >
               Owner Name
             </label>
           </div>

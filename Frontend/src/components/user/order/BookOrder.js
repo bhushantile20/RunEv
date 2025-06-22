@@ -7,6 +7,8 @@ import { getDistance } from "geolib";
 import {BsFuelPump} from "react-icons/bs"
 import BookPreview from "../../modal/BookPreview";
 import { toast } from "react-toastify";
+
+
 function BookOrder() {
   const { id } = useParams();
   const [station, setStation] = useState(null);
@@ -176,6 +178,7 @@ function BookOrder() {
       </div>
     </div>
   ) : null;
+  
   return (
     <div
       className="w-[screen] min-h-screen flex flex-col justify-around items-center lg:md:flex-row"

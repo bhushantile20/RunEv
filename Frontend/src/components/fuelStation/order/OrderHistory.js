@@ -80,5 +80,6 @@ function OrderHistory(){
     </div>
     </div>
     )
-}
+  }
+  
 export default OrderHistory;
