@@ -11,40 +11,18 @@ The Fuel Station Delivery App is a comprehensive application developed using the
 - Notifications: Automated notifications and updates keep customers informed about order status, delivery schedules, and any changes.
 - Ratings and Reviews: Users can provide feedback and ratings on their fuel delivery experience, helping fuel station owners improve their services.
 
-## Prerequisites
-- Node.js and npm installed on your local machine.
-- MongoDB database set up and running.
 
-## Getting Started
-1. Clone the repository:
-   ```git clone https://github.com/your-username/Fuel-Station.git```
-2. Navigate to the project directory:
-   ```cd Fuel-Station```
-   ```git clone https://github.com/Janhvisingh21/Fuel-Station.git```
-2. Navigate to the project directory:
-   ```cd Fuel-Station```
-3. Install dependencies for the server:
-   ```bash 
-   cd server
-   npm install
-   ```
-4. Set up environment variables:
-Create a .env file in the server directory.
-Add the necessary environment variables, such as database connection details and secret keys. Refer to .env.example for the required variables.
-5. Start the server:
-   ```bash 
-   npm start
-   ```
-7. Install dependencies for the client:
-   ```bash 
-   cd ../client
-   npm install
-   ```
-7. Set up environment variables:
-- Create a .env file in the client directory.
-- Add the necessary environment variables, such as API endpoint URLs. Refer to .env.example for the required variables.
-8. Start the client:
-```npm start```
-=======
-# RunEv
->>>>>>> c6c5ba8ac07cc606691121d3d777f87c175edb52
+
+
+
+
+ ![image](https://github.com/user-attachments/assets/fd9210bd-5219-48b4-bd1f-4805168008bd)
+
+ ![image](https://github.com/user-attachments/assets/7b84e3a2-1d5a-41a1-aa37-f8e77e06f9e6)
+ 
+ ![image](https://github.com/user-attachments/assets/e28532f9-b679-47b4-b2e0-45e818a2abb2)
+ 
+![image](https://github.com/user-attachments/assets/8c23978a-7402-4070-a455-fdd11f5dc161)
+
+
+
