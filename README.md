@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fuel Station Delivery App (MERN Stack)
 The Fuel Station Delivery App is a comprehensive application developed using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It is designed to simplify and optimize the process of fuel delivery for fuel station owners and customers.
 
@@ -44,3 +45,6 @@ Add the necessary environment variables, such as database connection details and
 - Add the necessary environment variables, such as API endpoint URLs. Refer to .env.example for the required variables.
 8. Start the client:
 ```npm start```
+=======
+# RunEv
+>>>>>>> c6c5ba8ac07cc606691121d3d777f87c175edb52
