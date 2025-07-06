@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# Fuel Station Delivery App (MERN Stack)
+# RunEv Charging Service providerApp (MERN Stack)
 The Fuel Station Delivery App is a comprehensive application developed using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It is designed to simplify and optimize the process of fuel delivery for fuel station owners and customers.
 
 ## Features
