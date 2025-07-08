@@ -1,15 +1,25 @@
 <<<<<<< HEAD
-# RunEv Charging Service providerApp (MERN Stack)
-The Fuel Station Delivery App is a comprehensive application developed using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It is designed to simplify and optimize the process of fuel delivery for fuel station owners and customers.
+RunEV – EV Charging Service Provider App (MERN Stack)
+RunEV is a full-stack web application developed using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It is designed to streamline the process of discovering, booking, and managing EV (Electric Vehicle) charging services for both service providers and EV users.
 
-## Features
-- User Registration and Authentication: Users can create accounts, log in securely, and manage their profile information.
-- Fuel Station Management: Fuel station owners can register their stations, update fuel availability, pricing, and manage delivery schedules.
-- Fuel Ordering: Customers can browse registered fuel stations, view fuel availability, pricing, and place orders for fuel delivery.
-- Secure Payment Integration: Integration with secure payment gateways enables customers to make online payments for their fuel orders.
-- Real-time Order Tracking: Customers can track the status of their fuel orders in real-time, from confirmation to dispatch and delivery.
-- Notifications: Automated notifications and updates keep customers informed about order status, delivery schedules, and any changes.
-- Ratings and Reviews: Users can provide feedback and ratings on their fuel delivery experience, helping fuel station owners improve their services.
+Key Features
+User Registration and Authentication: Allows users to sign up, log in securely, and manage their account details.
+
+Charging Station Management: Service providers can register their EV stations, manage charging slots, update pricing, and track usage.
+
+EV Charging Booking: EV owners can locate nearby charging stations, view real-time availability, and book charging slots in advance.
+
+Google Maps Integration: Displays station locations using Google Maps API to help users easily find and navigate to stations.
+
+AI-based Load Prediction (via Gemini API): Predicts station load and suggests optimal charging time using AI integration.
+
+Secure Online Payments: Users can pay for charging services through integrated, secure payment gateways.
+
+Real-time Slot Tracking: View live status of booked slots — whether charging is in progress, completed, or pending.
+
+Notifications & Reminders: Sends alerts for upcoming bookings, charging completion, and station availability.
+
+Ratings and Feedback System: EV users can rate their experience and share feedback, aiding service quality improvements.
 
 
 
