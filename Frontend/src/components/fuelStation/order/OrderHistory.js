@@ -1,4 +1,4 @@
-import LoginLight from "../../../assets/images/loginLight.jpg";
+import LoginLight from "../../../assets/images/4.png";
 import { useEffect, useState } from "react";
 import SimpleMap from "../../map/Simple";
 import AuthService from "../../../services/auth.service";

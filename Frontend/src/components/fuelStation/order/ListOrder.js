@@ -97,17 +97,17 @@ function ListOrder({ order,setLoading }) {
   {(fuel.petrol)?
 
                   <div className="text-sm  text-white font-semibold">
-                    <p>Petrol : </p>
+                    <p>Standard Charging: </p>
                     <p className="text-sm  font-thin">
-                      {fuel.petrol.price} ₹/L ( Quantity: {fuel.petrol.quantity} L)
+                      {fuel.petrol.price} ₹/kWh (Unit: {fuel.petrol.quantity} )
                     </p>
                   </div>:null}
                   <br/>
                   {(fuel.diesel)?
                   <div className="text-sm   text-white font-semibold">
-                    <p>Diesel : </p>
+                    <p> Fast Charging </p>
                     <p className="text-sm  font-thin">
-                     {fuel.diesel.price} ₹/L ( Quantity: {fuel.diesel.quantity} L)
+                     {fuel.diesel.price} ₹/kWh (Unit: {fuel.diesel.quantity} )
                     </p>
                   </div>:null}
                   <div className="text-sm   text-white  font-semibold">
@@ -120,7 +120,7 @@ function ListOrder({ order,setLoading }) {
                 <p className={` ${(isAccepted.status && !isDelivered.status)? " text-[#32CD32] font-bold ": "hidden" }`}>
                       Status : On The Way
                   </p>
-                  <p className={` ${(isCanceled.status)? " text-red-900 font-bold ": "hidden" }`}>
+                  <p className={` ${(isCanceled.status)? " text-red-700 font-bold ": "hidden" }`}>
                       Status : Canceled
                   </p>
                   <p className={` ${(isDelivered.status)? " text-[#32CD32] font-bold ": "hidden" }`}>
@@ -138,7 +138,7 @@ console.log(isAccepted)
         {/* <h3 className="text-orange text-xl font-semibold ">{""}</h3> */}
        {renderedUserInfo}
        {renderedOrderInfo}
-        <button className={`bg-transparent border-[#fe6f2b] hover:border-transparent hover:bg-[#fe6f2b] font-bold text-white py-1  border   rounded `} onClick={()=>{
+        <button className={`bg-transparent border-[#5182cc] hover:border-transparent hover:bg-[#5182cc] font-bold text-white py-1  border   rounded `} onClick={()=>{
             setShowModal(true)
         }}>
           View

@@ -22,14 +22,14 @@ function PreviewModal({content,setOnCancel,setOnSubmit}){
                     <h3 className="text-orange text-xl font-semibold text-black">{name}</h3>
 
                     <p className="text-grey-dark font-thin text-sm leading-normal text-black">
-                      Fuel Rate : Rs : {quantity.petrol.price}
+                     Standard Charging Rate : Rs : {quantity.petrol.price}
                       <br />
-                      Volume : {quantity.petrol.quantity} ltr
+                      UNIT : {quantity.petrol.quantity} kWh
                     </p>
                     <p className="text-grey-dark font-thin text-sm leading-normal text-black">
-                      Fuel Rate : Rs : {quantity.diesel.price}
+                     Fast  Charging Rate : Rs : {quantity.diesel.price}
                       <br />
-                      Volume : {quantity.diesel.quantity}ltr
+                      UNIT : {quantity.diesel.quantity}KWh
                     </p>
                     <p className="text-grey-dark font-thin text-sm leading-normal text-black">
                     Distance : {distance} KM

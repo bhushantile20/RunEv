@@ -159,13 +159,13 @@ function Register() {
       </div>
       <div className="actions w-full flex flex-col gap-4">
         <button
-          className="bg-[#fe6f2b] hover:bg-[#F59337] text-white font-bold py-2 px-4 rounded-full"
+          className="bg-[#5182cc] hover:bg-[#5182cc] text-white font-bold py-2 px-4 rounded-full"
 
         >
           Sign Up
         </button>
         <button
-                  className="bg-transparent border border-[#fe6f2b] hover:bg-[#F59337] text-white font-bold py-2 px-4 rounded-full"
+                  className="bg-transparent border border-[#5182cc] hover:bg-[#5182cc] text-white font-bold py-2 px-4 rounded-full"
           onClick={((e)=>{
                 e.preventDefault();
                 navigate('../login')

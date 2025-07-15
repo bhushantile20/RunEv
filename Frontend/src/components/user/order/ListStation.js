@@ -14,19 +14,20 @@ function ListStation({ station }) {
         <h3 className="text-orange text-xl font-semibold text-white">{name}</h3>
 
         <p className="text-grey-dark font-thin text-sm leading-normal text-white">
-          Fuel Rate : Rs : {quantity.petrol.price}
+        Standard Charging Rate: {quantity.petrol.price} kWh  
           <br />
-          Volume : {quantity.petrol.quantity} ltr
+        Available Energy: {quantity.petrol.quantity} kWh 
         </p>
         <p className="text-grey-dark font-thin text-sm leading-normal text-white">
-          Fuel Rate : Rs : {quantity.diesel.price}
+    
+        Fast Charging Rate: {quantity.diesel.price} kWh
           <br />
-          Volume : {quantity.diesel.quantity}ltr
+         Available Energy: {quantity.diesel.quantity} kWh
         </p>
         <p className="text-grey-dark font-thin text-sm leading-normal text-white">
-              Distance : {distance} KM
+            Distance : {distance} KM
         </p>
-        <button className="bg-transparent hover:bg-[#fe6f2b] border-[#fe6f2b] font-bold text-white py-1  border  hover:border-transparent rounded" onClick={()=>{
+        <button className="bg-transparent hover:bg-[#4873b5] border-[#5182cc] font-bold text-white py-1  border  hover:border-transparent rounded" onClick={()=>{
             setShowModal(true)
         }}>
           View

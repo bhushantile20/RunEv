@@ -1,4 +1,4 @@
-import LoginLight from "../../../assets/images/loginLight.jpg";
+import LoginLight from "../../../assets/images/main.png";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineLock } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
@@ -63,44 +63,46 @@ function Home() {
         </div>
         <div className="flex flex-row justify-evenly items-center  gap-5 lg:flex-row flex-wrap lg:gap-10 lg:w-[30%] ">
           <div className="text-white text-center text-[54px] flex flex-row justify-center items-center gap-3  whitespace-break-spaces font-sans  lg:text-[96px] md:text-[74px] ">
-            <BsFuelPump className="text-[#fe6f2b]"/>
+            <BsFuelPump className="text-[#5182cc]"/>
             <h1>{name}</h1>
           </div>
           <div className="flex flex-row justify-evenly items-center  gap-3 lg:flex-row flex-wrap lg:gap-5 lg:w-[100%] ">
             <div>
               <Link
                 to="/seller/update-inventory"
-                className="flex items-center justify-center  w-[200px] h-[100px] bg-gray-800 rounded-lg shadow hover:bg-[#fe6f2b]"
+                className="flex items-center justify-center  w-[200px] h-[100px] bg-gray-800 rounded-lg shadow hover:bg-[#5182cc]"
               >
                 <h5 className="mb-2 lg:text-2xl font-bold tracking-tight text-white dark:text-white">
-                  Update Fuel
+                  Update 
+                  <p>Charging Info</p>
                 </h5>
               </Link>
             </div>
             <div>
               <Link
                 to="/seller/order"
-                className="flex items-center justify-center  w-[200px] h-[100px] bg-gray-800 rounded-lg shadow hover:bg-[#fe6f2b]"
+                className="flex items-center justify-center  w-[200px] h-[100px] bg-gray-800 rounded-lg shadow hover:bg-[#5182cc]"
               >
                 <h5 className="mb-2 lg:text-2xl font-bold tracking-tight text-white dark:text-white">
-                  Order Fuel
+                  Charging 
+                  <p>Slot Booking</p>
                 </h5>
               </Link>
             </div>
             <div>
               <Link
                 to="/seller/orderHistory"
-                className="flex items-center justify-center  w-[200px] h-[100px] bg-gray-800 rounded-lg shadow hover:bg-[#fe6f2b]"
+                className="flex items-center justify-center  w-[200px] h-[100px] bg-gray-800 rounded-lg shadow hover:bg-[#5182cc]"
               >
                 <h5 class="mb-2 lg:text-2xl font-bold tracking-tight text-white dark:text-white">
-                  Order History
+                  Booking History
                 </h5>
               </Link>
             </div>
             <div>
               <Link
                 to="/seller/Profile"
-                className="flex items-center justify-center  w-[200px] h-[100px] bg-gray-800 rounded-lg shadow hover:bg-[#fe6f2b]"
+                className="flex items-center justify-center  w-[200px] h-[100px] bg-gray-800 rounded-lg shadow hover:bg-[#5182cc]"
               >
                 <h5 className="mb-2  lg:text-2xl font-bold tracking-tight text-white dark:text-white">
                   Profile
@@ -110,10 +112,10 @@ function Home() {
             <div>
               <Link
                 to="/seller/logout"
-                className="flex items-center justify-center  w-[200px] h-[100px] bg-gray-800 rounded-lg shadow hover:bg-[#fe6f2b]"
+                className="flex items-center justify-center  w-[200px] h-[100px] bg-gray-800 rounded-lg shadow hover:bg-[#5182cc]"
               >
                 <h5 class="mb-2 lg:text-2xl font-bold tracking-tight text-white dark:text-white">
-                  Log out
+                  Logout
                 </h5>
               </Link>
             </div>

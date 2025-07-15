@@ -99,17 +99,17 @@ function ListOrderHistory({ order,setLoading }) {
   {(fuel.petrol)?
 
                   <div className="text-sm  text-white font-semibold">
-                    <p>Petrol : </p>
+                    <p>Standard Charging: </p>
                     <p className="text-sm  font-thin">
-                      {fuel.petrol.price} ₹/L ( Quantity: {fuel.petrol.quantity} L)
+                      {fuel.petrol.price} ₹/kWh ( Unit: {fuel.petrol.quantity} )
                     </p>
                   </div>:null}
                   <br/>
                   {(fuel.diesel)?
                   <div className="text-sm   text-white font-semibold">
-                    <p>Diesel : </p>
+                    <p>Fast Charging : </p>
                     <p className="text-sm  font-thin">
-                     {fuel.diesel.price} ₹/L ( Quantity: {fuel.diesel.quantity} L)
+                     {fuel.diesel.price} ₹/kWh ( Unit: {fuel.diesel.quantity} )
                     </p>
                   </div>:null}
                   <div className="text-sm   text-white  font-semibold">
@@ -122,7 +122,7 @@ function ListOrderHistory({ order,setLoading }) {
                 <p className={` ${(isAccepted.status && !isDelivered.status)? " text-[#32CD32] font-bold ": "hidden" }`}>
                       Status : On The Way
                   </p>
-                  <p className={` ${(isCanceled.status)? " text-red-900 font-bold ": "hidden" }`}>
+                  <p className={` ${(isCanceled.status)? " text-red-700 font-bold ": "hidden" }`}>
                       Status : Canceled
                   </p>
                   <p className={` ${(isDelivered.status)? " text-[#32CD32] font-bold ": "hidden" }`}>
@@ -139,7 +139,7 @@ function ListOrderHistory({ order,setLoading }) {
         <h3 className="text-orange text-xl font-semibold text-white">{""}</h3>
        {renderedUserInfo}
        {renderedOrderInfo}
-        <button className="bg-transparent hover:bg-[#fe6f2b] border-[#fe6f2b] font-bold text-white py-1  border  hover:border-transparent rounded" onClick={()=>{
+        <button className="bg-transparent hover:bg-[#5182cc] border-[#5182cc] font-bold text-white py-1  border  hover:border-transparent rounded" onClick={()=>{
             setShowModal(true)
         }}>
           View

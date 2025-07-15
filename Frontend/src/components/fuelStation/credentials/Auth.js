@@ -1,5 +1,5 @@
 import { Outlet, useNavigate } from "react-router-dom";
-import authImage from "../../../assets/images/AuthFuelStation.gif";
+import authImage from "../../../assets/images/5.png";
 import { useEffect, useState } from "react";
 import {
     AiOutlineMail,
@@ -25,7 +25,7 @@ function Auth() {
 //   },[user])
 
   return (
-    <div className="min-h-screen  bg-[#252422] flex flex-col lg:flex-row justify-evenly items-center">
+    <div className="min-h-screen  bg-[#0f141f] flex flex-col lg:flex-row justify-evenly items-center">
       <div className="h-[45%]">
         <img src={authImage} alt={"Auth Image"} />
       </div>

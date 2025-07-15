@@ -14,19 +14,19 @@ function OrderPreview({order,setOnCancel,setOnApply,setOnClose,userInfo,setOnDel
     {(fuel.petrol)?
   
                     <div className="text-sm  text-black font-semibold">
-                      <p>Petrol : </p>
+                      <p>Slow Charging </p>
                       <p className="text-sm text-black  font-thin">
-                        {fuel.petrol.price} ₹/L ( Quantity: {fuel.petrol.quantity} L)
+                        {fuel.petrol.price}  ₹/kWh ( Quantity: {fuel.petrol.quantity} L)
                       </p>
                     </div>:null}
                     <br/>
                     {(fuel.diesel)?
                     <div className="text-sm   text-black font-semibold">
-                      <p>Diesel : </p>
+                      <p>Fast Charging </p>
                       <p className="text-sm text-black  font-thin">
-                       {fuel.diesel.price} ₹/L ( Quantity: {fuel.diesel.quantity} L)
+                       {fuel.diesel.price}  ₹/kWh ( Quantity: {fuel.diesel.quantity} L)
                       </p>
-                    </div>:null}
+                    </div>:null} 
                     <div className="text-sm   text-black  font-semibold">
                       <p className="text-sm   text-black font-thin">
                       Cost : Rs-{(method.cash)?method.cash:method.online.amount}
@@ -37,7 +37,7 @@ function OrderPreview({order,setOnCancel,setOnApply,setOnClose,userInfo,setOnDel
                   <p className={` ${(isAccepted.status && !isDelivered.status)? " text-[#32CD32] font-bold ": "hidden" }`}>
                       Status : On The Way
                   </p>
-                  <p className={` ${(isCanceled.status)? " text-red-900 font-bold ": "hidden" }`}>
+                  <p className={` ${(isCanceled.status)? " text-red-700 font-bold ": "hidden" }`}>
                       Status : Canceled
                   </p>
                   <p className={` ${(isDelivered.status)? " text-[#32CD32] font-bold ": "hidden" }`}>

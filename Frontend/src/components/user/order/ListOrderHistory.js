@@ -96,16 +96,16 @@ function ListOrderHistory({ order,setLoading }) {
 
   const renderedOrderInfo = <>
 <p className="text-grey-dark font-thin text-sm leading-normal text-white">
-  Fuel : <br/>
+  RunEv service : <br/>
   {(fuel.petrol)?<>
-    Petrol : 
+     Standard Charging  : 
     Price  : {fuel.petrol.price}<br/>
-    Quantity:{fuel.petrol.quantity}
+      Unit :{fuel.petrol.quantity}
   </>:null}
   {(fuel.diesel)?<>
-    Diesel   : 
+    Slow Charging  : 
     Price  : {fuel.diesel.price}<br/>
-    Quantity:{fuel.diesel.quantity}
+    Unit: {fuel.diesel.quantity}
   </>:null}
   <br />
 </p>
@@ -119,7 +119,7 @@ function ListOrderHistory({ order,setLoading }) {
 <p className={` ${(isAccepted.status && !isDelivered.status)? " text-[#32CD32] font-bold ": "hidden" }`}>
                       Status : On The Way
                   </p>
-                  <p className={` ${(isCanceled.status)? " text-red-900 font-bold ": "hidden" }`}>
+                  <p className={` ${(isCanceled.status)? " text-blue-500 font-bold ": "hidden" }`}>
                       Status : Canceled
                   </p>
                   <p className={` ${(isDelivered.status)? " text-[#32CD32] font-bold ": "hidden" }`}>
@@ -135,7 +135,7 @@ function ListOrderHistory({ order,setLoading }) {
         <h3 className="text-orange text-xl font-semibold text-white">{""}</h3>
        {renderedUserInfo}
        {renderedOrderInfo}
-       <button className="bg-transparent hover:bg-[#fe6f2b] border-[#fe6f2b] font-bold text-white py-1  border  hover:border-transparent rounded" onClick={()=>{
+       <button className="bg-transparent hover:bg-[#4e7bbd] border-[#5182cc] font-bold text-white py-1  border  hover:border-transparent rounded" onClick={()=>{
             setShowModal(true)
         }}>
           View

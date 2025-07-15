@@ -1,4 +1,4 @@
-import LoginLight from "../../../assets/images/loginLight.jpg";
+import LoginLight from "../../../assets/images/6.png";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineLock } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
@@ -76,7 +76,7 @@ function Home() {
             <h1>{"Hey, " + name.split(" ")[0]}</h1>
           </div>
           <div className="flex flex-row justify-evenly items-center  gap-3 lg:flex-row flex-wrap lg:gap-5 lg:w-[100%] ">
-            {/* <div>
+            {/* { <div>
               <Link
                 to="/user/update-inventory"
                 className="flex items-center justify-center  w-[200px] h-[100px] bg-gray-800 rounded-lg shadow hover:bg-[#fe6f2b]"
@@ -85,21 +85,22 @@ function Home() {
                   Update Fuel
                 </h5>
               </Link>
-            </div> */}
+            </div> } */}
             <div>
               <Link
                 to="/user/order"
-                className="flex items-center justify-center  w-[200px] h-[100px] bg-gray-800 rounded-lg shadow hover:bg-[#fe6f2b]"
+                className="flex items-center justify-center  w-[200px] h-[100px] bg-gray-800 rounded-lg shadow hover:bg-[#5182cc]"
               >
                 <h5 className="mb-2 lg:text-2xl font-bold tracking-tight text-white dark:text-white">
-                  Order Fuel
+                    Order RunEv
+                  <p>Charging services </p>
                 </h5>
               </Link>
             </div>
             <div>
               <Link
                 to="/user/orderHistory"
-                className="flex items-center justify-center  w-[200px] h-[100px] bg-gray-800 rounded-lg shadow hover:bg-[#fe6f2b]"
+                className="flex items-center justify-center  w-[200px] h-[100px] bg-gray-800 rounded-lg shadow hover:bg-[#5182cc]"
               >
                 <h5 class="mb-2 lg:text-2xl font-bold tracking-tight text-white dark:text-white">
                   Order History
@@ -109,7 +110,7 @@ function Home() {
             <div>
               <Link
                 to="/user/Profile"
-                className="flex items-center justify-center  w-[200px] h-[100px] bg-gray-800 rounded-lg shadow hover:bg-[#fe6f2b]"
+                className="flex items-center justify-center  w-[200px] h-[100px] bg-gray-800 rounded-lg shadow hover:bg-[#5182cc]"
               >
                 <h5 className="mb-2  lg:text-2xl font-bold tracking-tight text-white dark:text-white">
                   Profile
@@ -119,7 +120,7 @@ function Home() {
             <div>
               <Link
                 to="/user/logout"
-                className="flex items-center justify-center  w-[200px] h-[100px] bg-gray-800 rounded-lg shadow hover:bg-[#fe6f2b]"
+                className="flex items-center justify-center  w-[200px] h-[100px] bg-gray-800 rounded-lg shadow hover:bg-[#5182cc]"
               >
                 <h5 className="mb-2  lg:text-2xl font-bold tracking-tight text-white dark:text-white">
                   Log out

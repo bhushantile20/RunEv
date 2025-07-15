@@ -50,23 +50,26 @@ function BookPreview({
           <div className="border-0  lg:h-[90%] md:h-[100%] rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none overflow-scroll focus:outline-none">
             {/*body*/}
             <form className="relative  p-6  flex h-[100%]  justify-center flex-col lg:flex-row">
-              <div className="flex flex-col h-full md:w-1/2 items-center text-[#fe6f2b] text-[36px] ">
+              <div className="flex flex-col h-full md:w-1/2 items-center text-[#5182cc] text-[36px] ">
                 <h1> Bill </h1>
                 <div className="place-self-start">
                   <div className="text-[24px] text-black font-semibold">
-                    <p>Petrol : </p>
+                    <p>Charging Session:  </p>
                     <p className="text-[24px] font-thin">
-                      Total : {petrolPrice} ₹/L ( Quantity: {petrolQuantity} L)
+                      Total : {petrolPrice} ₹/kWh ( UNIT: {petrolQuantity} kWh)
+                 
                     </p>
                   </div>
                   <div className="text-[24px] text-black font-semibold">
-                    <p>Diesel : </p>
+                    <p>Service Charge </p>
                     <p className="text-[24px] font-thin">
-                      Total : {dieselPrice} ₹/L ( Quantity: {dieselQuantity} L)
+                      Total : {dieselPrice} ₹/kWh ( UNIT: {dieselQuantity} rs)
                     </p>
                   </div>
                   <div className="text-[24px] text-black font-semibold">
-                    <p>Delivery Charge ({deliveryCharge} per km) : </p>
+                    <p> ({deliveryCharge} per km) : </p>
+
+                    
                     <p className="text-[24px] font-thin">
                       Total Distance : {distance} / km <br />
                       Delivery Charge : {totalDeliveryCharge}
@@ -89,7 +92,7 @@ function BookPreview({
                     </label>
                   </div>
                   <div class="mb-3 w-full flex flex-col gap-5 lg:mb-0">
-                    <div class="flex items-center pl-4 border  rounded border-[#F59337] ">
+                    <div class="flex items-center pl-4 border  rounded border-[#5182cc] ">
                       <input
                         id="online"
                         type="radio"
@@ -105,7 +108,7 @@ function BookPreview({
                             });
                           }
                         }}
-                        class="w-4 h-4 text-blue-600 bg-gray-100 border border-[#F59337] focus:ring-blue-500 "
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border border-[#5182cc] focus:ring-blue-500 "
                       />
                       <label
                         htmlFor="online"
@@ -114,7 +117,7 @@ function BookPreview({
                         Online
                       </label>
                     </div>
-                    <div class="flex  items-center pl-4 border rounded border-[#F59337] ">
+                    <div class="flex  items-center pl-4 border rounded border-[#5182cc] ">
                       <input
                         checked={(method.cash)?true : false}
                         id="cash"
@@ -130,7 +133,7 @@ function BookPreview({
                             });
                           }
                         }}
-                        class="w-4 h-4 text-blue-600 bg-gray-100 border-[#F59337] focus:ring-blue-500 "
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-[#5182cc] focus:ring-blue-500 "
                       />
                       <label
                         htmlFor="cash"
@@ -145,7 +148,7 @@ function BookPreview({
               <div className="flex md:w-1/2 flex-col h-full">
                 <div className="relative p-6 flex h-[100%] flex-col text-black">
                   <div className="flex flex-col lg:flex-row h-full justify-center items-center gap-3 p-3">
-                    <BsFuelPump className="text-[#fe6f2b] text-[36px]" />
+                    <BsFuelPump className="text-[#5182c] text-[36px]" />
                     <h1 className="text-center text-[44px] font-bold text-black">
                       {name}
                     </h1>

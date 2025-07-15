@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import LoginLight from "../../../assets/images/loginLight.jpg";
+import LoginLight from "../../../assets/images/main.jpg";
 import {MdOutlineInventory2} from "react-icons/md"
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
@@ -101,7 +101,7 @@ function UpdateFuel() {
       <div className="w-[100%] text-white  h-[100%] justify-center gap-5 lg:w-1/2 items-center flex flex-col flex-wrap overflow-scroll">
         <div className="header">
           <h1 className="text-center text-[54px]">Update Quantity</h1>
-          <p>Please Fill in the new quantity of Petrol and Diesel</p>
+          <p>Please Fill in the new Charging unit </p>
         </div>
         <form class="w-full max-w-sm" onSubmit={onHandleSubmit}>
           <div class="gap-3 md:flex md:items-center mb-6 ">
@@ -110,12 +110,12 @@ function UpdateFuel() {
                 class="block text-white font-bold md:text-right mb-1 md:mb-0 pr-4"
                 for="inline-petrol"
               >
-                Petrol 
+               Standard Charging
               </label>
             </div>
             <div class="mb-3 lg:mb-0">
               <input
-                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
                 id="inline-petrol"
                 type="number"
                 value={petrolQuantity}
@@ -128,7 +128,7 @@ function UpdateFuel() {
             </div>
             <div class="">
               <input
-                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
                 id="inline-petrol"
                 type="number"
                 value={petrolPrice}
@@ -146,12 +146,12 @@ function UpdateFuel() {
                 class="block text-white font-bold md:text-right mb-1 md:mb-0 pr-4"
                 for="inline-diesel"
               >
-                Diesel 
+               Fast Charging:
               </label>
             </div>
             <div class="mb-3 lg:mb-0">
               <input
-                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
                 id="inline-diesel"
                 type="number"
                 value={dieselQuantity}
@@ -164,7 +164,7 @@ function UpdateFuel() {
             </div>
             <div class="">
               <input
-                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
                 id="inline-diesel"
                 type="number"
                 value={dieselPrice}
@@ -178,12 +178,12 @@ function UpdateFuel() {
           </div>
           <div className="actions flex flex-col gap-4">
             <button
-              className="bg-[#fe6f2b] hover:bg-[#F59337] text-white font-bold py-2 px-4 rounded-full"
+              className="bg-[#5182cc] hover:bg-[#5182cc] text-white font-bold py-2 px-4 rounded-full"
             >
               Update
             </button>
             <button
-              className="bg-transparent border border-[#fe6f2b] hover:bg-[#F59337] text-white font-bold py-2 px-4 rounded-full"
+              className="bg-transparent border border-[#5182cc] hover:bg-[#5182cc] text-white font-bold py-2 px-4 rounded-full"
               onClick={((e)=>{
                 e.preventDefault();
                 navigate('../')

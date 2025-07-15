@@ -95,7 +95,7 @@ function Register() {
           </div>
           <div className="md:w-2/3">
             <input
-              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
               id="inline-full-name"
               type="text"
               value={owner}
@@ -118,7 +118,7 @@ function Register() {
           </div>
           <div className="md:w-2/3">
             <input
-              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
               id="inline-full-email"
               type="email"
               value={email}
@@ -166,7 +166,7 @@ function Register() {
           </div>
           <div className="md:w-2/3 relative flex flex-row">
             <input
-              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 pr-7 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 pr-7 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
               id="inline-password"
               type={`${showPassword ? "text" : "password"}`}
               placeholder="******************"
@@ -204,7 +204,7 @@ function Register() {
           </div>
           <div className="md:w-2/3 relative flex flex-row">
             <button
-              className=" bg-transparent hover:bg-[#F59337] font-semibold hover:text-white py-2 px-4 border border-[#fe6f2b] hover:border-transparent text-white  py-2 px-4 rounded"
+              className=" bg-transparent hover:bg-[#5182cc] font-semibold hover:text-white py-2 px-4 border border-[#5182cc] hover:border-transparent text-white  py-2 px-4 rounded"
               onClick={(e) => {
                 e.preventDefault();
                 setShowModal(!showModal);
@@ -227,12 +227,12 @@ function Register() {
         </div>
         <div className="actions w-full flex flex-col gap-4">
           <button 
-          className="bg-[#fe6f2b] hover:bg-[#F59337] text-white font-bold py-2 px-4 rounded-full"
+          className="bg-[#5182cc] hover:bg-[#5182cc] text-white font-bold py-2 px-4 rounded-full"
           >
             Sign Up
           </button>
           <button 
-          className="bg-transparent border border-[#fe6f2b] hover:bg-[#F59337] text-white font-bold py-2 px-4 rounded-full"
+          className="bg-transparent border border-[#5182cc] hover:bg-[#5182cc] text-white font-bold py-2 px-4 rounded-full"
            
            onClick={((e)=>{
                 e.preventDefault();

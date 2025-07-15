@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import authService from "../../../services/auth.service";
-import LoginLight from "../../../assets/images/loginLight.jpg";
+import LoginLight from "../../../assets/images/2.png";
 import Modal from "../../modal/Modal";
 import { getDistance } from "geolib";
 import {BsFuelPump} from "react-icons/bs"
@@ -94,17 +94,17 @@ function BookOrder() {
   }, []);
 
   useEffect(()=>{
-    if(petrolQuantity !== "" && station){
+    if(petrolQuantity !== "0" && station){
       return setPetrolPrice(petrolQuantity * station.quantity.petrol.price)
     }
-    setPetrolQuantity(0);
+    setPetrolQuantity();
   },[petrolQuantity])
 
   useEffect(()=>{
-    if(dieselQuantity !== "" && station){
+    if(dieselQuantity !== "0" && station){
       return setDieselPrice(dieselQuantity * station.quantity.diesel.price)
     }
-    setDieselQuantity(0);
+    setDieselQuantity();
   },[dieselQuantity])
 
   const proceedOrder =  (e) =>{
@@ -159,22 +159,23 @@ function BookOrder() {
   const renderedInfo = station ? (
     <div className="flex flex-col">
     <div className="flex flex-row gap-3 items-center">
-      <BsFuelPump className="text-[#fe6f2b] text-[54px]"/>
+      <BsFuelPump className="text-[#5182cc] text-[54px]"/>
       <h1 className="text-center text-[54px] font-bold">
         {station.name}
       </h1>
     </div>
       <div className="flex flex-row items-center">
-          <label className="text-[24px] font-semibold">Petrol: </label>
+          <label className="text-[24px] font-semibold">Standard Charging </label>
           <p className="text-[24px] font-thin">
-          {station.quantity.petrol.price} ₹/L (Total Quantity : {station.quantity.petrol.quantity} L)
+          {station.quantity.petrol.price} ₹/kWh (Total Units: {station.quantity.petrol.quantity} )
           </p>
       </div>
       <div className="flex flex-row items-center">
-          <label className="text-[24px] font-semibold">Diesel: </label>
+          <label className="text-[24px] font-semibold">Fast Charging: </label>
           <p className="text-[24px] font-thin">
-          {station.quantity.diesel.price} ₹/L (Total Quantity : {station.quantity.diesel.quantity} L)
+          {station.quantity.diesel.price} ₹/kWh (Total Units : {station.quantity.diesel.quantity} )
           </p>
+          
       </div>
     </div>
   ) : null;
@@ -209,7 +210,7 @@ function BookOrder() {
             </div>
             <div class="">
               <button
-                className=" bg-transparent hover:bg-[#F59337] font-semibold hover:text-white py-2 px-4 border border-[#fe6f2b] hover:border-transparent text-white  py-2 px-4 rounded"
+                className=" bg-transparent hover:bg-[#5182cc] font-semibold hover:text-white py-2 px-4 border border-[#5182cc] hover:border-transparent text-white  py-2 px-4 rounded"
                 onClick={(e) => {
                   e.preventDefault();
                   setShowModal(!showModal);
@@ -236,12 +237,12 @@ function BookOrder() {
                 class="block text-white font-bold md:text-right mb-1 md:mb-0 pr-4"
                 for="inline-newPassword"
               >
-                Petrol
+                Standard Charging
               </label>
             </div>
             <div class="mb-3 lg:mb-0">
               <input
-                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
                 id="inline-newPassword"
                 type="number"
                 onChange={(e) => {
@@ -258,7 +259,7 @@ function BookOrder() {
             </div>
             <div class="mb-3 lg:mb-0">
               <input
-                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
                 id="inline-newPassword"
                 type="number"
                 readOnly
@@ -276,12 +277,12 @@ function BookOrder() {
                 class="block text-white font-bold md:text-right mb-1 md:mb-0 pr-4"
                 for="inline-diesel"
               >
-                Diesel
+                Fast Charging
               </label>
             </div>
             <div class="mb-3 lg:mb-0">
               <input
-                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
                 id="inline-diesel"
                 type="number"
                 onChange={(e) => {
@@ -297,7 +298,7 @@ function BookOrder() {
             </div>
             <div class="mb-3 lg:mb-0">
               <input
-                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
                 id="inline-diesel"
                 type="number"
                 readOnly
@@ -308,7 +309,7 @@ function BookOrder() {
           </div>
            
           <div className="actions w-full flex flex-col gap-4">
-            <button className="bg-[#fe6f2b] hover:bg-[#F59337] w-full text-white font-bold py-2 px-4 rounded-full"
+            <button className="bg-[#5182cc] hover:bg-[#5182cc] w-full text-white font-bold py-2 px-4 rounded-full"
             onClick={(e)=>{
               e.preventDefault();
               if(!address){
@@ -324,7 +325,7 @@ function BookOrder() {
               Order
             </button>
             <button
-              className="bg-transparent border border-[#fe6f2b] w-full hover:bg-[#F59337] text-white font-bold py-2 px-4 rounded-full"
+              className="bg-transparent border border-[#5182cc] w-full hover:bg-[#5182cc] text-white font-bold py-2 px-4 rounded-full"
               onClick={(e) => {
                 e.preventDefault();
                 navigate("../");

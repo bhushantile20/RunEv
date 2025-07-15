@@ -14,18 +14,18 @@ function Index(){
                         Let's Started
                     </h1>
                     <p>
-                        Get Fuel on your door step.
+                        Power up your EV anywhere — anytime, hassle-free.
                     </p>
                 </div>
                 <div className="actions w-full flex flex-col gap-4">
-                    <button className="bg-[#fe6f2b] hover:bg-[#F59337] text-white font-bold py-2 px-4 rounded-full"
+                    <button className="bg-[#5182cc] hover:bg-[#5182cc] text-white font-bold py-2 px-4 rounded-full"
                     onClick={()=>{
                         navigate('user/auth/login')
                     }}
                     >
                         User
                     </button>
-                    <button className="bg-transparent border border-[#fe6f2b] hover:bg-[#F59337] text-white font-bold py-2 px-4 rounded-full"
+                    <button className="bg-transparent border border-[#5182cc] hover:bg-[#5182cc] text-white font-bold py-2 px-4 rounded-full"
                         onClick={()=>{
                         navigate('seller/auth/login')
                     }}

@@ -44,7 +44,7 @@ function Login() {
   return (
     <>
         <div className="header">
-          <h1 className="text-center text-[54px]">Seller Login</h1>
+          <h1 className="text-center text-[54px]">Admin Login</h1>
           <p>Login with your email and password</p>
         </div>
         <form class="w-full max-w-sm" onSubmit={handleLogin}>
@@ -59,7 +59,7 @@ function Login() {
             </div>
             <div class="md:w-2/3">
               <input
-                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
                 id="inline-full-name"
                 type="email"
                 value={email}
@@ -82,7 +82,7 @@ function Login() {
             </div>
             <div class="md:w-2/3 relative flex flex-row">
               <input
-                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 pr-7 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 pr-7 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
                 id="inline-password"
                 type={`${(showPassword)?"text":"password"}`}
                 placeholder="******************"
@@ -106,12 +106,12 @@ function Login() {
           </div>
           <div className="actions w-full flex flex-col gap-4">
             <button
-              className="bg-[#fe6f2b] hover:bg-[#F59337] text-white font-bold py-2 px-4 rounded-full"
+              className="bg-[#5182cc] hover:bg-[#5182cc] text-white font-bold py-2 px-4 rounded-full"
             >
               Login
             </button>
             <button
-              className="bg-transparent border border-[#fe6f2b] hover:bg-[#F59337] text-white font-bold py-2 px-4 rounded-full"
+              className="bg-transparent border border-[#5182cc] hover:bg-[#5182cc] text-white font-bold py-2 px-4 rounded-full"
               onClick={((e)=>{
                 e.preventDefault();
                 navigate('../register')
@@ -120,7 +120,7 @@ function Login() {
               Sign Up
             </button>
             <button
-              className="bg-transparent mb-5 border border-[#fe6f2b] hover:bg-[#F59337] text-white font-bold py-2 px-4 rounded-full"
+              className="bg-transparent mb-5 border border-[#5182cc] hover:bg-[#5182cc] text-white font-bold py-2 px-4 rounded-full"
               onClick={((e)=>{
                 e.preventDefault();
                 navigate('/user/')
