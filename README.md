@@ -1,50 +1,38 @@
 <<<<<<< HEAD
-# Fuel Station Delivery App (MERN Stack)
-The Fuel Station Delivery App is a comprehensive application developed using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It is designed to simplify and optimize the process of fuel delivery for fuel station owners and customers.
+RunEV – EV Charging Service Provider App (MERN Stack)
+RunEV is a full-stack web application developed using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It is designed to streamline the process of discovering, booking, and managing EV (Electric Vehicle) charging services for both service providers and EV users.
 
-## Features
-- User Registration and Authentication: Users can create accounts, log in securely, and manage their profile information.
-- Fuel Station Management: Fuel station owners can register their stations, update fuel availability, pricing, and manage delivery schedules.
-- Fuel Ordering: Customers can browse registered fuel stations, view fuel availability, pricing, and place orders for fuel delivery.
-- Secure Payment Integration: Integration with secure payment gateways enables customers to make online payments for their fuel orders.
-- Real-time Order Tracking: Customers can track the status of their fuel orders in real-time, from confirmation to dispatch and delivery.
-- Notifications: Automated notifications and updates keep customers informed about order status, delivery schedules, and any changes.
-- Ratings and Reviews: Users can provide feedback and ratings on their fuel delivery experience, helping fuel station owners improve their services.
+Key Features
+User Registration and Authentication: Allows users to sign up, log in securely, and manage their account details.
 
-## Prerequisites
-- Node.js and npm installed on your local machine.
-- MongoDB database set up and running.
+Charging Station Management: Service providers can register their EV stations, manage charging slots, update pricing, and track usage.
 
-## Getting Started
-1. Clone the repository:
-   ```git clone https://github.com/your-username/Fuel-Station.git```
-2. Navigate to the project directory:
-   ```cd Fuel-Station```
-   ```git clone https://github.com/Janhvisingh21/Fuel-Station.git```
-2. Navigate to the project directory:
-   ```cd Fuel-Station```
-3. Install dependencies for the server:
-   ```bash 
-   cd server
-   npm install
-   ```
-4. Set up environment variables:
-Create a .env file in the server directory.
-Add the necessary environment variables, such as database connection details and secret keys. Refer to .env.example for the required variables.
-5. Start the server:
-   ```bash 
-   npm start
-   ```
-7. Install dependencies for the client:
-   ```bash 
-   cd ../client
-   npm install
-   ```
-7. Set up environment variables:
-- Create a .env file in the client directory.
-- Add the necessary environment variables, such as API endpoint URLs. Refer to .env.example for the required variables.
-8. Start the client:
-```npm start```
-=======
-# RunEv
->>>>>>> c6c5ba8ac07cc606691121d3d777f87c175edb52
+EV Charging Booking: EV owners can locate nearby charging stations, view real-time availability, and book charging slots in advance.
+
+Google Maps Integration: Displays station locations using Google Maps API to help users easily find and navigate to stations.
+
+AI-based Load Prediction (via Gemini API): Predicts station load and suggests optimal charging time using AI integration.
+
+Secure Online Payments: Users can pay for charging services through integrated, secure payment gateways.
+
+Real-time Slot Tracking: View live status of booked slots — whether charging is in progress, completed, or pending.
+
+Notifications & Reminders: Sends alerts for upcoming bookings, charging completion, and station availability.
+
+Ratings and Feedback System: EV users can rate their experience and share feedback, aiding service quality improvements.
+
+
+
+
+
+
+ ![image](https://github.com/user-attachments/assets/fd9210bd-5219-48b4-bd1f-4805168008bd)
+
+ ![image](https://github.com/user-attachments/assets/7b84e3a2-1d5a-41a1-aa37-f8e77e06f9e6)
+
+ ![image](https://github.com/user-attachments/assets/4a4f490d-4df1-45ad-a31d-49881fecd67d)
+
+![image](https://github.com/user-attachments/assets/8c23978a-7402-4070-a455-fdd11f5dc161)
+
+
+
