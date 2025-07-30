@@ -1,5 +1,5 @@
-<img width="1907" height="968" alt="image" src="https://github.com/user-attachments/assets/e4fd965b-cb13-4371-abc0-43b3abc8e215" /><<<<<<< HEAD
-RunEV – EV Charging Service Provider App (MERN Stack)
+
+#RunEV – EV Charging Service Provider App (MERN Stack)
 RunEV is a full-stack web application developed using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It is designed to streamline the process of discovering, booking, and managing EV (Electric Vehicle) charging services for both service providers and EV users.
 
 Key Features
