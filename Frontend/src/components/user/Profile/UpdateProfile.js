@@ -1,5 +1,5 @@
 import Card from "./Card";
-import LoginLight from "../../../assets/images/loginLight.jpg";
+import LoginLight from "../../../assets/images/main.jpg";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import authService from "../../../services/auth.service";

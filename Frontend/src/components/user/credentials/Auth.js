@@ -24,6 +24,7 @@ function Auth() {
 //     }
 //   },[user])
 
+
   return (
     <div className="min-h-screen  bg-[#18274d] flex flex-col lg:flex-row justify-evenly items-center">
       <div className="h-[45%]">
@@ -35,4 +36,6 @@ function Auth() {
     </div>
   );
 }
+
+
 export default Auth;

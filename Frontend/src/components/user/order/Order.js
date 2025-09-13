@@ -46,18 +46,28 @@ function Order(){
     },[pointer])
 
 
-    const renderedStations = stations?stations.map((element)=>{
-      const distance = parseInt(getDistance(
-        { latitude:element.location.lat,longitude: element.location.lng },
-        { latitude: pointer.lat, longitude: pointer.lng }        
-      )/1000)
-      const station = {
-        ...element,distance
+    const renderedStations = Array.isArray(stations)
+  ? stations.map((element, index) => {
+      // Check for valid location data
+      if (
+        !element?.location ||
+        typeof element.location.lat !== "number" ||
+        typeof element.location.lng !== "number"
+      ) {
+        console.warn(`⚠️ Skipped invalid station at index ${index}`, element);
+        return null;
       }
-      return(
-        <ListStation station={station} />
-      )
-    }):null;
+
+      const distance = parseInt(
+        getDistance(
+          { latitude: element.location.lat, longitude: element.location.lng },
+          { latitude: pointer.lat, longitude: pointer.lng }
+        ) / 1000
+      );
+      const station = { ...element, distance };
+      return <ListStation key={element._id || index} station={station} />;
+    })
+  : null;
     
         return(
         <div
